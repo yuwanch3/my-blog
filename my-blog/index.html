@@ -237,13 +237,11 @@
       .image-wrapper {
         position: relative;
         width: 100%;
-        aspect-ratio: 1;
+        height: 500px;
         border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
         overflow: hidden;
         box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
         animation: morph 8s infinite ease-in-out;
-        object-position: center;
-        display: block;
       }
 
       @keyframes morph {
@@ -260,7 +258,9 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        object-position: center;
         filter: grayscale(10%);
+        display: block;
       }
 
       /* About Section */
@@ -563,7 +563,7 @@
           </div>
           <div class="hero-image">
             <div class="image-wrapper">
-              <img src="profile.jpeg" alt="Profile Picture" />
+              <img src="https://imgur.com/a/VXhWTTk" alt="Profile Picture" />
             </div>
           </div>
         </div>
@@ -619,44 +619,6 @@
       <div class="container">
         <h2 class="section-title">Blog Terbaru</h2>
         <h3>Nanti yaa, masih coming soon/otw wkwk</h3>
-        <!-- <div class="blog-grid">
-          <div class="blog-card">
-            <div class="blog-image">📝</div>
-            <div class="blog-content">
-              <div class="blog-date">15 Februari 2026</div>
-              <h3>Memulai Perjalanan sebagai Web Developer</h3>
-              <p>
-                Tips dan trik untuk kamu yang baru memulai belajar web
-                development. Dari mana harus mulai? Tools apa yang dibutuhkan?
-              </p>
-              <a href="#" class="read-more">Baca Selengkapnya →</a>
-            </div>
-          </div>
-          <div class="blog-card">
-            <div class="blog-image">🚀</div>
-            <div class="blog-content">
-              <div class="blog-date">10 Februari 2026</div>
-              <h3>5 Project Portfolio yang Wajib Kamu Buat</h3>
-              <p>
-                Ingin menonjol sebagai developer? Berikut 5 project portfolio
-                yang akan membuat CV kamu stand out dari yang lain.
-              </p>
-              <a href="#" class="read-more">Baca Selengkapnya →</a>
-            </div>
-          </div>
-          <div class="blog-card">
-            <div class="blog-image">💡</div>
-            <div class="blog-content">
-              <div class="blog-date">5 Februari 2026</div>
-              <h3>Rahasia Design System yang Efektif</h3>
-              <p>
-                Design system bukan cuma tentang component library. Pelajari
-                bagaimana membuat design system yang truly scalable.
-              </p>
-              <a href="#" class="read-more">Baca Selengkapnya →</a>
-            </div>
-          </div>
-        </div> -->
       </div>
     </section>
 
@@ -673,21 +635,27 @@
           <div class="social-links">
             <a
               href="https://www.instagram.com/rafl1sept/"
+              target="_blank"
+              rel="noopener noreferrer"
               class="social-link"
               title="Instagram"
               >📷</a
             >
-            <a href="https://x.com/Dontoru15" class="social-link" title="X"
+            <a href="https://x.com/Dontoru15" target="_blank" rel="noopener noreferrer" class="social-link" title="X"
               >🐦</a
             >
             <a
               href="https://www.linkedin.com/in/rafli-septian-8451933b2/"
+              target="_blank"
+              rel="noopener noreferrer"
               class="social-link"
               title="LinkedIn"
               >💼</a
             >
             <a
               href="https://github.com/yuwanch3"
+              target="_blank"
+              rel="noopener noreferrer"
               class="social-link"
               title="GitHub"
               >💻</a
