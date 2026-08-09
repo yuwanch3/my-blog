@@ -75,10 +75,13 @@ nav .container{display:flex;justify-content:space-between;align-items:center;max
 .workflow-content p{color:var(--text-light);font-size:.95rem;margin:0}
 
 /* Gambar app (mock) */
-.app-images{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1.2rem;margin:2rem 0}
-.app-img{background:#fff;border-radius:16px;padding:1.2rem;text-align:center;border:1px solid #e2e8f0;transition:all .3s ease}
+.app-images{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;margin:2rem 0}
+.app-img{background:#fff;border-radius:16px;padding:1rem 1rem 1.2rem;border:1px solid #e2e8f0;transition:all .3s ease;text-align:center}
 .app-img:hover{transform:translateY(-5px);box-shadow:0 10px 30px rgba(0,0,0,.08)}
-.app-img img{width:90px;height:90px;margin-bottom:.8rem}
+.phone-frame{aspect-ratio:9/19;border-radius:16px;overflow:hidden;margin-bottom:.9rem;position:relative;background:linear-gradient(135deg,var(--secondary),var(--accent))}
+.phone-frame img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+.icon-holder{aspect-ratio:9/19;border-radius:16px;margin-bottom:.9rem;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--secondary),var(--accent))}
+.icon-holder img{width:70px;height:70px;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.3)}
 .app-img span{font-size:.85rem;color:var(--text-light);font-weight:500;display:block}
 
 /* CTA & tombol */
@@ -98,6 +101,7 @@ footer p{opacity:.8}
 .nav-links{display:none}
 .article-hero h1{font-size:2.2rem}
 .article-body h2{font-size:1.5rem}
+.app-images{grid-template-columns:repeat(2,1fr);gap:.8rem}
 }
 </style>
 </head>
@@ -216,10 +220,10 @@ halaman — sangat cocok untuk aplikasi yang punya banyak alur (auth → materi 
 
 <h2>📱 Preview Aplikasi</h2>
 <div class="app-images">
-<div class="app-img"><img src="/assets/ambativasi-icon.png" alt="Ikon Ambativasi" /><span>Ikon Aplikasi</span></div>
-<div class="app-img"><img src="/assets/ambativasi-icon.png" alt="Ikon Ambativasi" /><span>Materi Interaktif</span></div>
-<div class="app-img"><img src="/assets/ambativasi-icon.png" alt="Ikon Ambativasi" /><span>Ujian &amp; Kuis</span></div>
-<div class="app-img"><img src="/assets/ambativasi-icon.png" alt="Ikon Ambativasi" /><span>Gamifikasi &amp; AI</span></div>
+<div class="app-img"><div class="icon-holder"><img src="/assets/ambativasi-icon.png" alt="Ikon Ambativasi" /></div><span>Ikon Aplikasi</span></div>
+<div class="app-img"><div class="phone-frame"><img src="/assets/ambativasi-materi.jpg" alt="Materi Interaktif" loading="lazy" /></div><span>Materi Interaktif</span></div>
+<div class="app-img"><div class="phone-frame"><img src="/assets/ambativasi-ujian.jpg" alt="Ujian & Kuis" loading="lazy" /></div><span>Ujian & Kuis</span></div>
+<div class="app-img"><div class="phone-frame"><img src="/assets/ambativasi-gamifikasi.jpg" alt="Gamifikasi & AI" loading="lazy" /></div><span>Gamifikasi & AI</span></div>
 </div>
 
 <h2>📦 Coba Aplikasinya</h2>
