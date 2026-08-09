@@ -4,9 +4,25 @@
     {
       "src": "index.html",
       "use": "@vercel/static"
+    },
+    {
+      "src": "blog-ambativasi.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "assets/**",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
+    {
+      "src": "/blog-ambativasi",
+      "dest": "/blog-ambativasi.html"
+    },
+    {
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1"
+    },
     {
       "src": "/(.*)",
       "dest": "/index.html"
